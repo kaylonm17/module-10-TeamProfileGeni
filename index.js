@@ -43,5 +43,24 @@ const employeePrompt = () => {
         type: 'list',
         name: 'employeeType',
         message: "What type"
+        choices: [
+            {name: 'Engineer', value: "addEngineer"},
+            {name: 'Intern', value: "addIntern"},
+            {name: 'DONE', value: "done"}
+        ]
     }])
+    .then( answer => {
+        // sends correct prompts based on the employee type
+        if (answer.employeeType === 'addEngineer') { engineerQuestions(); };
+        if (answer.employeeType === 'addIntern') { internQuestions(); };
+        if (answer.employeeType === 'done') {
+            // converts users inputs into HTML
+            let html = template(employeesArr)
+            console.log('...');
+            // creates HTML file
+            writeFile(html);
+        }
+    })
 }
+
+init();
