@@ -8,7 +8,7 @@
     
 }
 
-.box { border: 1px solid black; }
+.box { border: 1px solid rgb(0, 0, 0); }
 
 body {
     display: flex;
@@ -16,7 +16,7 @@ body {
     align-items: center;
     flex-direction: column;
 
-    background: #f5f4f7;
+    background: #5370ee;
 }
 
 .bg-color-1 { background-color: #F8B195; }
@@ -30,14 +30,14 @@ body {
     justify-content: space-around;
 }
 
-.my-team { background-color: #b29ef7; }
+.my-team { background-color: #3d3c3c; }
 
-.manager-name { background-color: #ff3535; }
+.manager-name { background-color: #f1e641; }
 
-.engineer-name { background-color: #95ff95; }
+.engineer-name { background-color: #fa0000; }
 
-.intern-name { background-color: #fff388; }
+.intern-name { background-color: #47d3ec; }
 
-.employee-info { background-color: #f5f4f7; }
+.employee-info { background-color: #c74d4d; }
 
 .card { background-color: #355C7D; }
